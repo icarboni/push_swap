@@ -6,7 +6,7 @@
 /*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:30:09 by icarboni          #+#    #+#             */
-/*   Updated: 2022/11/10 19:10:07 by icarboni         ###   ########.fr       */
+/*   Updated: 2022/11/10 20:58:05 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ void	ft_add_numbers(t_stack *a, int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		(a[i - 1]).index = i - 1;
 		(a[i - 1]).num = ft_atoi(argv[i]);
 		i++;
 	}

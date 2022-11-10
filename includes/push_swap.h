@@ -6,7 +6,7 @@
 /*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:45:46 by icarboni          #+#    #+#             */
-/*   Updated: 2022/11/10 18:55:30 by icarboni         ###   ########.fr       */
+/*   Updated: 2022/11/10 20:58:18 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@
 typedef struct s_stack
 {
 	int		num;
-	int		index;
+	int		pos;
+	int		mov;
 }	t_stack;
 
 int		main(int argc, char **argv);
