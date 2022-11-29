@@ -6,15 +6,8 @@
 /*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 21:17:12 by icarboni          #+#    #+#             */
-/*   Updated: 2022/11/07 21:24:42 by icarboni         ###   ########.fr       */
+/*   Updated: 2022/11/29 19:54:15 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./includes/push_swap.h"
-
-void	ft_order_list(t_list **a, t_list **b)
-{
-	(void) a;
-	(void) b;
-	return ;
-}

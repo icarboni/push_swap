@@ -6,14 +6,14 @@
 #    By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 19:53:24 by icarboni          #+#    #+#              #
-#    Updated: 2022/11/07 21:24:25 by icarboni         ###   ########.fr        #
+#    Updated: 2022/11/29 19:30:59 by icarboni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 CC = gcc
 FLAG = -Wall -Wextra -Werror -I.
-SRC = push_swap.c order.c
+SRC = push_swap.c utils.c stack_utils.c
 OBJ = ${SRC:.c=.o}
 LIBFT = ./libft/libft.a
 MAKE_LIBFT = -f ./libft/Makefile
