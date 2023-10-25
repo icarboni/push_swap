@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_errors.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: icarboni <icarboni@student.42.fr>          +#+  +:+       +#+        */
+/*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 18:10:34 by icarboni          #+#    #+#             */
-/*   Updated: 2023/10/25 14:07:08 by icarboni         ###   ########.fr       */
+/*   Updated: 2023/10/25 17:47:12 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int	check_dup(t_stacks *l)
 	int	j;
 
 	i = 0;
-
 	while (i < l->size_a)
 	{
 		j = i + 1;
@@ -55,7 +54,7 @@ int	check_number(char *stack)
 	return (1);
 }
 
-int ft_check_is_INT(char *input)
+int	ft_check_is_int(char *input)
 {
 	long	num;
 	int		n;
@@ -77,7 +76,8 @@ int ft_check_is_INT(char *input)
 	}
 	if ((neg == -1 && num > 2147483648) || (neg == 1 && num > 2147483647))
 		return (1);
-	else return (0);
+	else
+		return (0);
 }
 
 int	*split_argv(char *input, int size)
@@ -91,7 +91,7 @@ int	*split_argv(char *input, int size)
 	stack = ft_calloc(size, sizeof(int));
 	while (split[i])
 	{
-		if (check_number(split[i]) == 0 || ft_check_is_INT(split[i]))
+		if (check_number(split[i]) == 0 || ft_check_is_int(split[i]))
 			ft_error();
 		stack[i] = ft_atoi(split[i]);
 		free(split[i]);

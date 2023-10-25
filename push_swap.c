@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: icarboni <icarboni@student.42.fr>          +#+  +:+       +#+        */
+/*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 15:22:19 by icarboni          #+#    #+#             */
-/*   Updated: 2023/10/25 14:07:28 by icarboni         ###   ########.fr       */
+/*   Updated: 2023/10/25 17:51:23 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int	main(int argc, char **argv)
 
 void	list_stacks_one_argc(char **argv, t_stacks *list)
 {
-	int	i;
-	int	size;
-	char *clean_input;
+	int		i;
+	int		size;
+	char	*clean_input;
 
 	i = 0;
 	list -> size_a = ft_size_stack(argv[1]);
@@ -60,7 +60,7 @@ void	list_stacks(int argc, char **argv, t_stacks *list)
 	while (argv[i])
 	{
 		list->stack_b[0] = 0;
-		if (check_number(argv[i]) == 0 || ft_check_is_INT(argv[i]))
+		if (check_number(argv[i]) == 0 || ft_check_is_int(argv[i]))
 			ft_error();
 		list -> stack_a[i - 1] = ft_atoi(argv[i]);
 		i++;
@@ -85,7 +85,7 @@ int	ft_size_stack(char *argv)
 	return (size);
 }
 
-char *ft_clean_input(char *input)
+char	*ft_clean_input(char *input)
 {
 	int		i;
 	int		j;
@@ -108,32 +108,3 @@ char *ft_clean_input(char *input)
 	clean[j] = '\n';
 	return (clean);
 }
-
-// int	*split_argv2(char *argv, int size)
-// {
-// 	char	*split;
-// 	int		*stack;
-// 	int		i;
-// 	int		j;
-// 	int		n;
-
-// 	stack = ft_calloc((size), sizeof(int));
-// 	i = 0;
-// 	j = 0;
-// 	while (argv[i])
-// 	{
-// 		n = 0;
-// 		split = ft_calloc(ft_strlen(argv), sizeof(char));
-// 		while (argv[i] != ' ' && argv[i])
-// 			split[n++] = argv[i++];
-// 		if (argv[i] == ' ')
-// 			i++;
-// 		if (check_number(split) == 0)
-// 			ft_error();
-// 		stack[j] = ft_atoi(split);
-// 		free(split);
-// 		j++;
-// 	}
-// 	return (stack);
-// }
-

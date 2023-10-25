@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: icarboni <icarboni@student.42.fr>          +#+  +:+       +#+        */
+/*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 18:47:33 by icarboni          #+#    #+#             */
-/*   Updated: 2023/10/25 14:09:54 by icarboni         ###   ########.fr       */
+/*   Updated: 2023/10/25 17:45:30 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
@@ -77,6 +76,6 @@ void	ft_radix(t_stacks *l);
 void	ft_error(void);
 int		check_dup(t_stacks *l);
 int		check_number(char *stack);
-int		ft_check_is_INT(char *input);
+int		ft_check_is_int(char *input);
 
 #endif

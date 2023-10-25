@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sorting.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: icarboni <icarboni@student.42.fr>          +#+  +:+       +#+        */
+/*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 10:23:59 by icarboni          #+#    #+#             */
-/*   Updated: 2023/10/24 14:27:45 by icarboni         ###   ########.fr       */
+/*   Updated: 2023/10/25 17:46:14 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,14 +81,14 @@ void	ft_sorting_five(t_stacks *l)
 {
 	if (l -> stack_a[0] == 5)
 		pb(l);
-    if (l -> stack_a[2] == 5)
+	if (l -> stack_a[2] == 5)
 		ra(l);
-    if (l -> stack_a[2] == 5 || l -> stack_a[1] == 5)
+	if (l -> stack_a[2] == 5 || l -> stack_a[1] == 5)
 	{
-        ra(l);
-        pb(l);
-    }
-    if (l -> stack_a[3] == 5)
+		ra(l);
+		pb(l);
+	}
+	if (l -> stack_a[3] == 5)
 		rra(l);
 	if (l -> stack_a[3] == 5 || l -> stack_a[4] == 5)
 	{

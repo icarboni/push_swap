@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: icarboni <icarboni@student.42.fr>          +#+  +:+       +#+        */
+/*   By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 16:30:08 by icarboni          #+#    #+#             */
-/*   Updated: 2023/10/24 12:57:09 by icarboni         ###   ########.fr       */
+/*   Updated: 2023/10/25 17:44:54 by icarboni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,3 @@ int	ft_putstr(char *str)
 	}
 	return (count--);
 }
-
